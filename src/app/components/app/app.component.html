@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+
+
+<!-- 
+<app-listado></app-listado> 
+-->
+
+<div>
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+</div>
+<div *ngFor='let ListadoComponent of listadocomponent'>
+    <img [src]="ListadoComponent.picture.medium">
+    <h2>{{ ListadoComponent.name.first | uppercase }}</h2>
+    <p>{{ ListadoComponent.email }}</p>
+</div>
